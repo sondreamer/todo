@@ -9,7 +9,7 @@ function createTask(value) {
 
     let check = document.createElement('input');
     check.type = 'checkbox';
-    check.classList.add("status");
+    //check.classList.add("status");
     check.addEventListener('click', (event) => completeTask(event));
     task.appendChild(check);
 
