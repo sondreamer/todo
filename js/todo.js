@@ -7,13 +7,14 @@ function createTask(value) {
     task.textContent = value;
     task.classList.add('check');
 
-    let check = document.createElement('input');
+    const check = document.createElement('input');
     check.type = 'checkbox';
-    //check.classList.add("status");
+    check.classList.add("status");
     check.addEventListener('click', (event) => completeTask(event));
     task.appendChild(check);
 
     return task;
+}
 
     function addTask() {
         if (field.value) {
@@ -35,6 +36,5 @@ function createTask(value) {
             container.classList.remove('success');
         }
     }
-}
 
 
